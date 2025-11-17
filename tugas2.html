@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My feedback form</title>
+
+  <style>
+    h1 {
+      color: green;
+      margin-bottom: 15px; /* jarak bawah judul */
+    }
+
+    .title {
+      color: red;
+      margin-bottom: 20px; /* jarak bawah h1 kedua */
+    }
+
+    form {
+      margin: 25px; /* jarak luar form */
+    }
+
+    ul li {
+      margin-bottom: 12px; /* jarak antar item list */
+    }
+
+    textarea {
+      margin-top: 5px;   /* jarak atas textarea */
+      width: 250px;
+      height: 100px;
+    }
+
+    button {
+      margin-top: 10px;  /* jarak di atas tombol */
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>My feedback form</h1>
+<h1 class="title">My feedback form</h1>
+
+<form action="#" method="post" enctype="multipart/form-data">
+  <ul>
+    <li>Name: <input type="text" name="name"></li>
+    <li>Email: <input type="email" name="email"></li>
+    <li>Password: <input type="password" name="password"></li>
+  </ul>
+
+  <p>Please check all the emotions that apply to you:</p>
+  <ul>
+    <li><input type="checkbox" name="emotion" value="angry" checked> Angry</li>
+    <li><input type="checkbox" name="emotion" value="sad"> Sad</li>
+    <li><input type="checkbox" name="emotion" value="happy"> Happy</li>
+    <li><input type="checkbox" name="emotion" value="ambivalent"> Ambivalent</li>
+  </ul>
+
+  <p>How satisfied were you with our service?</p>
+  <ul>
+    <li><input type="radio" name="satisfaction" value="very_satisfied" checked> Very satisfied</li>
+    <li><input type="radio" name="satisfaction" value="satisfied"> Satisfied</li>
+    <li><input type="radio" name="satisfaction" value="didn't_care"> Didn't care</li>
+    <li><input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied</li>
+    <li><input type="radio" name="satisfaction" value="very_dissatisfied"> Very dissatisfied</li>
+  </ul>
+
+  <ul>
+    <li>Further comments: <br><textarea name="comments"></textarea></li>
+
+    <li>Bio photo:
+      <input type="file" name="bio_photo">
+      <button type="button">Choose...</button>
+    </li>
+  
+    <li>Location visited:
+      <select name="location_visited">
+        <option>Select location</option>
+        <option value="location_a">Location A</option>
+        <option value="location_b">Location B</option>
+        <option value="location_c">Location C</option>
+      </select>
+    </li>
+  </ul>
+
+  <ul>
+    <li><button type="submit">Submit</button></li>
+  </ul>
+
+</form>
+
+</body>
+</html>

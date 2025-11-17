@@ -1,0 +1,258 @@
+<DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Feedback Form</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px; /* Lebar maksimal formulir */
+            background-color: white;
+            padding: 30px 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box…
+[20.35, 16/11/2025] Wanda: <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Feedback Form</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            /* Mengatur tata letak agar formulir di tengah */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px; /* Lebar maksimal formulir */
+            background-color: white;
+            padding: 30px 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .form-title {
+            color: #4CAF50; /* Warna hijau */
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .form-subtitle {
+            color: red; /* Warna merah */
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Styling untuk Input Teks, Email, Password, Textarea, dan Select */
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"],
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 2px;
+        }
+
+        .form-group select {
+            appearance: none; 
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%20197.38L146.2%2056.58%205.4%20197.38z%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 10px top 50%;
+            background-size: 12px;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* INDENTASI: Memajukan kolom Checkbox (Emosi) */
+        .checkbox-group {
+            padding-left: 20px;
+        }
+        
+        /* INDENTASI: Memajukan kolom Radio Button (Kepuasan) */
+        .radio-group {
+            padding-left: 20px;
+        }
+
+        /* Styling untuk Checkbox dan Radio Button */
+        .checkbox-group label,
+        .radio-group label {
+            font-weight: normal; 
+            display: inline;
+            margin-left: 5px;
+        }
+
+        /* Styling untuk input file */
+        .file-group {
+            display: flex;
+            align-items: center;
+        }
+        .file-group label {
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+        .file-group input[type="file"] {
+            border: none;
+            padding: 0;
+            display: inline-block;
+            width: auto;
+        }
+
+
+        /* Styling Tombol Kirim */
+        .submit-button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="POST" class="feedback-form">
+            <h1 class="form-title">My Feedback Form</h1>
+            <p class="form-subtitle">Kirimkan feedback mu untuk akuu!!</p>
+            
+            <div class="form-group">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="form-group">
+                <label for="hobi">Hobi :</label>
+                <input type="text" id="hobi" name="hobi">
+            </div>
+
+            <div class="form-section">
+                <p class="section-title">Please check all the emotions that apply to you:</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="angry" name="emotion[]" value="Angry">
+                    <label for="angry">Angry</label><br>
+                    
+                    <input type="checkbox" id="sad" name="emotion[]" value="Sad">
+                    <label for="sad">Sad</label><br>
+                    
+                    <input type="checkbox" id="happy" name="emotion[]" value="Happy">
+                    <label for="happy">Happy</label><br>
+                    
+                    <input type="checkbox" id="ambivalent" name="emotion[]" value="Ambivalent">
+                    <label for="ambivalent">Ambivalent</label><br>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <p class="section-title">How satisfied were you with our service :</p>
+                <div class="radio-group">
+                    <input type="radio" id="very-satisfied" name="satisfaction" value="Very Satisfied">
+                    <label for="very-satisfied">Very Satisfied</label><br>
+                    
+                    <input type="radio" id="satisfied" name="satisfaction" value="Satisfied">
+                    <label for="satisfied">Satisfied</label><br>
+                    
+                    <input type="radio" id="didnt-care" name="satisfaction" value="Didn't Care">
+                    <label for="didnt-care">Didn't Care</label><br>
+                    
+                    <input type="radio" id="dissatisfied" name="satisfaction" value="Dissatisfied">
+                    <label for="dissatisfied">Dissatisfied</label><br>
+                    
+                    <input type="radio" id="very-dissatisfied" name="satisfaction" value="Very Dissatisfied">
+                    <label for="very-dissatisfied">Very Dissatisfied</label><br>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Further Comments :</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+
+            <div class="form-group file-group">
+                <label for="bio-photo">Bio photo :</label>
+                <input type="file" id="bio-photo" name="bio-photo">
+            </div>
+            
+            <div class="form-group">
+                <label for="location">Location visited :</label>
+                <select id="location" name="location">
+                    <option value="" disabled selected>Select location</option>
+                    <option value="location-a">Bandung</option>
+                    <option value="location-b">Bali</option>
+                    <option value="location-c">Yogyakarta</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-button">Kirim</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

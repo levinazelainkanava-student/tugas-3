@@ -1,5 +1,5 @@
 <?php
-echo "<h4>tugass pertama input nama dan  jenis kelamin</h4>";
+echo "<h4>Tugas pertama input nama dan  jenis kelamin</h4>";
 echo "<br>";
 $nama = "Aily"; // ubah nama di sini
 
@@ -11,7 +11,7 @@ if ($nama == "bagas") {
     echo "nama tidak dikenali";
 }
 echo "<br>";
-echo "<h4>tugas kedua pengkondisian</h4>";
+echo "<h4>Tugas kedua kondisi</h4>";
 echo "<br>";
 $nama = "andi";
 $buah1 = "pisang";
@@ -29,7 +29,7 @@ else {
 }
 
 echo "<br>";
-echo "<h4>tugas pengulangan maju</h4>";
+echo "<h4>Tugas pengulangan maju</h4>";
 
 echo "<br>";
 for ($i =1; $i<=10; $i++){
